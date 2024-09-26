@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Find Missing People</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">Find Missing People</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-white hover:underline">Home</a></li>
+                <li><a href="#search" class="text-white hover:underline">Search</a></li>
+                <li><a href="#contact" class="text-white hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-blue-500 text-white py-20 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold">Help Find Missing Loved Ones</h2>
+            <p class="mt-4 text-xl">Join us in reuniting families by helping to locate missing persons.</p>
+            <button class="mt-6 bg-white text-blue-500 py-2 px-4 rounded-md font-semibold hover:bg-gray-100">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Search Form Section -->
+    <section id="search" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Search for Missing Persons</h2>
+            <div class="bg-white shadow-lg rounded-lg p-8">
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block font-semibold">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full mt-2 p-3 border border-gray-300 rounded-md" placeholder="Enter missing person’s full name">
+                    </div>
+                    <div>
+                        <label for="age" class="block font-semibold">Age</label>
+                        <input type="number" id="age" name="age" class="w-full mt-2 p-3 border border-gray-300 rounded-md" placeholder="Enter missing person’s age">
+                    </div>
+                    <div>
+                        <label for="last-seen" class="block font-semibold">Last Seen Location</label>
+                        <input type="text" id="last-seen" name="last-seen" class="w-full mt-2 p-3 border border-gray-300 rounded-md" placeholder="Enter the last known location">
+                    </div>
+                    <div>
+                        <label for="date" class="block font-semibold">Date Last Seen</label>
+                        <input type="date" id="date" name="date" class="w-full mt-2 p-3 border border-gray-300 rounded-md">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-600 text-white py-2 px-6 rounded-md font-semibold hover:bg-blue-700">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- List of Missing Persons Section -->
+    <section class="py-16 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Recently Reported Missing Persons</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Missing Person Card 1 -->
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.I106VK5QQVE-G3cmAoZmWAHaHn&pid=Api&P=0&h=180" alt="Missing Person" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold">John Doe</h3>
+                    <p class="mt-2">Age: 9</p>
+                    <p>Last Seen: New York City</p>
+                    <p>Date Last Seen: 2023-09-12</p>
+                    <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">More Info</button>
+                </div>
+                <!-- Missing Person Card 2 -->
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.mz1urUyOOc-upLldYcDZMgHaEK&pid=Api&P=0&h=180" alt="Missing Person" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold">Jane Smith</h3>
+                    <p class="mt-2">Age: 8</p>
+                    <p>Last Seen: Los Angeles</p>
+                    <p>Date Last Seen: 2023-09-05</p>
+                    <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">More Info</button>
+                </div>
+                <!-- Missing Person Card 3 -->
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.NnbyIYbUx8Yr1q0UuU0YdwHaEK&pid=Api&P=0&h=180" alt="Missing Person" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold">Michael Brown</h3>
+                    <p class="mt-2">Age: 7</p>
+                    <p>Last Seen: Chicago</p>
+                    <p>Date Last Seen: 2023-08-28</p>
+                    <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">More Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-500 text-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <form class="max-w-lg mx-auto space-y-4">
+                <div>
+                    <label for="your-name" class="block font-semibold">Your Name</label>
+                    <input type="text" id="your-name" name="your-name" class="w-full mt-2 p-3 border border-gray-300 rounded-md text-gray-800" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="email" class="block font-semibold">Email</label>
+                    <input type="email" id="email" name="email" class="w-full mt-2 p-3 border border-gray-300 rounded-md text-gray-800" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label for="message" class="block font-semibold">Message</label>
+                    <textarea id="message" name="message" class="w-full mt-2 p-3 border border-gray-300 rounded-md text-gray-800" rows="5" placeholder="How can we assist you?"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-white text-blue-500 py-2 px-6 rounded-md font-semibold hover:bg-gray-100">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 py-4 text-center text-white">
+        <p>&copy; 2024 Find Missing People. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
